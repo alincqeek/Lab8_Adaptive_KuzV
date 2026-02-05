@@ -1,0 +1,53 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    grid-template-rows: 80px 1fr 1fr 60px; 
+    grid-template-areas:
+        "header header header"
+        "sidebar main widget1"
+        "sidebar main widget2"
+        "footer footer footer";
+    gap: 15px;
+    min-height: 600px;
+}
+.grid-container > *{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+
+}
+.widget-1 {
+    background-color:rgb(57, 131, 47);
+    grid-area: widget1;
+    height: 200px;
+              
+}
+.widget-2 {
+    background-color:rgb(57, 131, 47);
+    grid-area: widget2;
+    height: 200px;
+              
+}
+
+.sidebar{
+    background-color:rgb(147, 214, 138);
+    
+    grid-area: sidebar;
+    
+}
+.footer  {
+    grid-area: footer;
+    background-color:rgb(12, 32, 9);
+   
+}
+.main{
+    grid-area: main;
+   background-color:rgb(94, 190, 81);
+}
+.header {
+    grid-area: header;
+    background-color:rgb(208, 240, 204);
+    
+}

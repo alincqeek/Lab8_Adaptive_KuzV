@@ -2,7 +2,7 @@
     display: grid;
     gap: 20px;
 }
-/* Стили для контейнера CSS Grid */
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
